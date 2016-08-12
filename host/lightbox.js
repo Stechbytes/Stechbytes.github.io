@@ -27,7 +27,7 @@ $( function()
 
 			closeButtonOn = function( instance )
 			{
-				$( '<button type="button" id="imagelightbox-close" title="Close"></button>' ).appendTo( 'body' ).on( 'click touchend', function(){ $( this ).remove(); instance.quitImageLightbox(); return false; });
+				$( '<button type="button" id="imagelightbox-close" title="Close"><i class="fa fa-times" aria-hidden="true"></i></button>' ).appendTo( 'body' ).on( 'click touchend', function(){ $( this ).remove(); instance.quitImageLightbox(); return false; });
 			},
 			closeButtonOff = function()
 			{
