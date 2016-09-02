@@ -6,6 +6,7 @@ jQuery('.morph-main-menu-button-wrapper, .morph-main-menu-activator').on('click'
 		{		
 			/* hide morph slide */
 			jQuery('.morph-main-wrapper').removeClass('morph-main-wrapper-active');
+			$('.morph-main-wrapper, .morph-main-background').css('display','none');
 			/* hide morph background */
 			jQuery('.morph-main-background').removeClass('morph-main-background-active');
 			/* hide background overlay */
@@ -31,6 +32,7 @@ jQuery('.morph-main-menu-button-wrapper, .morph-main-menu-activator').on('click'
 		} else {		
 			/* show morph slide */
 			jQuery('.morph-main-wrapper').addClass('morph-main-wrapper-active');
+			$('.morph-main-wrapper, .morph-main-background').css('display','block');
 			/* show morph background */
 			jQuery('.morph-main-background').addClass('morph-main-background-active');
 			/* show background overlay */
