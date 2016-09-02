@@ -45,7 +45,7 @@ jQuery('.morph-main-menu-button-wrapper, .morph-main-menu-activator').on('click'
 // END SHOW/HIDE MAIN MENU
 
 // BEGIN SHOW/HIDE SECONDARY MENU
-jQuery('.morph-secondary-menu-button i').on('click', function(e) {
+jQuery('.morph-secondary-menu-button .scmbt').on('click', function(e) {
 'use strict';
 	e.preventDefault();
 		if(jQuery('.morph-secondary-menu-wrapper').hasClass('morph-secondary-menu-wrapper-active'))
