@@ -41,9 +41,10 @@
 }
 
 .jssocials-share-logo {
-    width: 1em;
+        width: 35px;
     margin-left: -3px;
-    font-size: 14px;
+    font-size: 18px;
+    top: 8px;
 }
 
 img.jssocials-share-logo {
@@ -64,6 +65,7 @@ img.jssocials-share-logo {
     padding: 0px 0px;
     width:35px;
     height:35px;
+    box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12),0 1px 1px 0 rgba(0,0,0,.24);
 }
 
 .jssocials-share-twitter .jssocials-share-link {
