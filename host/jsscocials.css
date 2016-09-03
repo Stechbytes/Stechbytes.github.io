@@ -231,7 +231,7 @@ img.jssocials-share-logo {
     font-size: 2rem;
     text-align: center;
 }
-
+/*
 @media only screen and (max-width:1001px) {
     .jssocials-share-linkedin {
         display: none;
@@ -261,3 +261,4 @@ img.jssocials-share-logo {
 @media only screen and (max-width:450px) {
     .jssocials-share-count-box {}
 }
+*/
