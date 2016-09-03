@@ -199,27 +199,51 @@ function(a, b, c) {
         twitter: {
             label: "",
             logo: "fa fa-twitter",
-            shareUrl: "https://twitter.com/share?url={url}&text={text}&via={via}&hashtags={hashtags}"
+            shareUrl: "https://twitter.com/share?url={url}&text={text}&via={via}&hashtags={hashtags}",
+            countUrl: "https://cdn.api.twitter.com/1/urls/count.json?url={url}&callback=?",
+            getCount: function(a) {
+                return a.count
+            }
         },
         facebook: {
             label: "",
             logo: "fa fa-facebook",
-            shareUrl: "https://facebook.com/sharer/sharer.php?u={url}"
+            shareUrl: "https://facebook.com/sharer/sharer.php?u={url}",
+            countUrl: function() {
+                return "https://graph.facebook.com/fql?q=SELECT total_count FROM link_stat WHERE url='" + a.encodeURIComponent(this.url) + "'"
+            },
+            getCount: function(a) {
+                return a.data.length && a.data[0].total_count || 0
+            }
         },
         googleplus: {
             label: "",
             logo: "fa fa-google-plus",
-            shareUrl: "https://plus.google.com/share?url={url}"
+            shareUrl: "https://plus.google.com/share?url={url}",
+            countUrl: function() {
+                return "https://cors-anywhere.herokuapp.com/https://plusone.google.com/_/+1/fastbutton?url=" + a.encodeURIComponent(this.url)
+            },
+            getCount: function(a) {
+                return parseFloat((a.match(/\{c: ([.0-9E]+)/) || [])[1])
+            }
         },
         linkedin: {
             label: "",
             logo: "fa fa-linkedin",
-            shareUrl: "https://www.linkedin.com/shareArticle?url={url}"
+            shareUrl: "https://www.linkedin.com/shareArticle?url={url}",
+            countUrl: "https://www.linkedin.com/countserv/count/share?format=jsonp&url={url}&callback=?",
+            getCount: function(a) {
+                return a.count
+            }
         },
         pinterest: {
             label: "",
             logo: "fa fa-pinterest",
-            shareUrl: "https://pinterest.com/pin/create/bookmarklet/?media={media}&url={url}&description={text}"
+            shareUrl: "https://pinterest.com/pin/create/bookmarklet/?media={media}&url={url}&description={text}",
+            countUrl: "https://api.pinterest.com/v1/urls/count.json?&url={url}&callback=?",
+            getCount: function(a) {
+                return a.count
+            }
         }
     })
 }(window, jQuery, window.jsSocials);
