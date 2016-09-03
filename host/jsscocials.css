@@ -55,9 +55,9 @@ img.jssocials-share-logo {
     text-align: center;
     text-decoration: none;
     text-align: center;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
     font-weight: bold;
     color: #E5FFFF;
     vertical-align: middle;
