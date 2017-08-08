@@ -1,0 +1,18 @@
+[
+  {
+    "date":01-01-2017,
+    "rate":20,
+    "detail":abcd
+  },
+   {
+   "date":01-02-2017,
+    "rate":20,
+    "detail":abcd
+  }
+  ,
+   {
+   "date":01-03-2017,
+    "rate":20,
+    "detail":abcd
+  }
+]
