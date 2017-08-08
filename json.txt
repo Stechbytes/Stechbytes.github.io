@@ -1,8 +1,7 @@
 [
   {
     "date":01-01-2017,
-    "rate":20,
-    "detail":"Date:08-08-2017
+    "rate":"Date:08-08-2017
 PEFG RATE INSHA ALLAH.
 C=2520 
 F=2420
@@ -13,7 +12,8 @@ GRAM     = C /F
 50-55.99 =42/41/g
 (sale rate)= 2820
 PER DOZEN= 96/-
-PER EGG     = 8.0/-"
+PER EGG     = 8.0/-",
+    "detail":2255
   },
    {
    "date":01-02-2017,
